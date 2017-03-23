@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="/home/claym/Downloads/gson-2.7.jar" sourcepath="/amazon"/>
+	<classpathentry kind="lib" path="/home/claym/Downloads/selenium-server-standalone-2.53.1.jar" sourcepath="/amazon"/>
+	<classpathentry kind="lib" path="/home/claym/Downloads/jar_files (1).zip"/>
+	<classpathentry kind="lib" path="/home/claym/Downloads/java-client-5.0.0-BETA1.jar" sourcepath="">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/home/claym/Downloads/java-client-5.0.0-BETA1"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/claym/Downloads/java-client-4.1.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
