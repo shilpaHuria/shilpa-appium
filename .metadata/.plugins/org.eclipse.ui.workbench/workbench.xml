@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="22" version="2.0">
+<workbench progressCount="23" version="2.0">
 <workbenchAdvisor/>
 <window height="744" maximized="true" width="1024" x="65" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -38,7 +38,7 @@
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ZioxAppium.java" partName="ZioxAppium.java" path="/home/claym/workspace/appium/src/appium/ZioxAppium.java" title="ZioxAppium.java" tooltip="appium/src/appium/ZioxAppium.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/appium/src/appium/ZioxAppium.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3368" selectionTopPixel="1417"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="9652" selectionTopPixel="4179"/>
 </editor>
 </editors>
 <views>
@@ -125,100 +125,159 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/zioxstore/src/ziox/ZioxStore.java"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=zioxstore/\/home\/claym\/Downloads\/java-client-4.1.2.jar&lt;io.appium.java_client(AppiumDriver.class"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/appium/src/appium/ZioxAppium.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Dealz4you/src/Deals4you/Dealz.java"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=Dealz4you/\/usr\/lib\/jvm\/java-7-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.util(ArrayList.class"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=Dealz4you/\/usr\/lib\/jvm\/java-7-openjdk-amd64\/jre\/lib\/rt.jar&lt;sun.reflect(DelegatingConstructorAccessorImpl.class"/>
 </editors>
-<item historyLabel="ZioxStore.java" index="0">
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="7655" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="7675" y="17"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="7716" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="9708" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="9547" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="9779" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="10002" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="10235" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="2350" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="2302" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="10027" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="5449" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="5459" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="8127" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="7023" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="6710" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="6638" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="6615" y="18"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="6613" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="6195" y="9"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="2596" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="2564" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="2522" y="2"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="2596" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="2455" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="2439" y="0"/>
+</item>
+<item historyLabel="ArrayList.class" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="AppiumDriver.class" index="1">
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="2439" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="2390" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="2438" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="8403" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="8403" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="8491" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="8403" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="8219" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="8219" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="8219" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="8219" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="8219" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="9140" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="9140" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="9140" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="8423" y="5"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="3395" y="0"/>
+</item>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="8901" y="0"/>
+</item>
+<item historyLabel="DelegatingConstructorAccessorImpl.class" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="ZioxStore.java" index="0">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="8901" y="0"/>
 </item>
-<item historyLabel="ZioxAppium.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="8014" y="0"/>
 </item>
-<item historyLabel="ZioxAppium.java" index="2">
-<position info="not_deleted" x="2701" y="0"/>
+<item historyLabel="ZioxAppium.java" index="0">
+<position info="not_deleted" x="8219" y="0"/>
 </item>
-<item historyLabel="ZioxAppium.java" index="2">
-<position info="not_deleted" x="2806" y="0"/>
-</item>
-<item historyLabel="ZioxAppium.java" index="2">
-<position info="not_deleted" x="2709" y="24"/>
-</item>
-<item historyLabel="ZioxAppium.java" index="2">
-<position info="not_deleted" x="2433" y="0"/>
-</item>
-<item historyLabel="ZioxAppium.java" index="2">
-<position info="not_deleted" x="2667" y="0"/>
-</item>
-<item historyLabel="ZioxAppium.java" index="2">
-<position info="not_deleted" x="2608" y="0"/>
-</item>
-<item historyLabel="Dealz.java" index="3">
-<position info="not_deleted" x="2326" y="146"/>
-</item>
-<item historyLabel="ZioxAppium.java" index="2">
-<position info="not_deleted" x="2590" y="0"/>
-</item>
-<item historyLabel="ZioxAppium.java" index="2">
+<item active="true" historyLabel="ZioxAppium.java" index="0">
 <position/>
-</item>
-<item historyLabel="ZioxAppium.java" index="2">
-<position info="not_deleted" x="1993" y="0"/>
-</item>
-<item historyLabel="ZioxAppium.java" index="2">
-<position info="not_deleted" x="2017" y="120"/>
-</item>
-<item historyLabel="ZioxAppium.java" index="2">
-<position info="not_deleted" x="1493" y="0"/>
-</item>
-<item historyLabel="ZioxAppium.java" index="2">
-<position info="not_deleted" x="946" y="3"/>
-</item>
-<item historyLabel="ZioxAppium.java" index="2">
-<position info="not_deleted" x="2240" y="0"/>
-</item>
-<item historyLabel="ZioxAppium.java" index="2">
-<position info="not_deleted" x="2240" y="0"/>
-</item>
-<item historyLabel="ZioxAppium.java" index="2">
-<position info="not_deleted" x="2239" y="0"/>
-</item>
-<item historyLabel="ZioxAppium.java" index="2">
-<position info="not_deleted" x="2239" y="0"/>
-</item>
-<item historyLabel="ZioxAppium.java" index="2">
-<position info="not_deleted" x="2239" y="0"/>
-</item>
-<item historyLabel="ZioxAppium.java" index="2">
-<position info="not_deleted" x="2239" y="0"/>
-</item>
-<item historyLabel="ZioxAppium.java" index="2">
-<position info="not_deleted" x="2239" y="0"/>
-</item>
-<item historyLabel="ZioxAppium.java" index="2">
-<position info="not_deleted" x="2239" y="0"/>
-</item>
-<item historyLabel="ZioxAppium.java" index="2">
-<position info="not_deleted" x="2239" y="0"/>
-</item>
-<item historyLabel="ZioxAppium.java" index="2">
-<position info="not_deleted" x="2239" y="0"/>
-</item>
-<item historyLabel="ZioxAppium.java" index="2">
-<position info="not_deleted" x="1948" y="0"/>
-</item>
-<item historyLabel="ZioxAppium.java" index="2">
-<position info="not_deleted" x="1945" y="0"/>
-</item>
-<item active="true" historyLabel="ZioxAppium.java" index="2">
-<position info="not_deleted" x="1944" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -226,6 +285,12 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="topLeft"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -233,10 +298,17 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="bottomRight"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="DelegatingConstructorAccessorImpl.class" tooltip="sun.reflect.DelegatingConstructorAccessorImpl">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Dealz4you/\/usr\/lib\/jvm\/java-7-openjdk-amd64\/jre\/lib\/rt.jar&lt;sun.reflect(DelegatingConstructorAccessorImpl.class"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="ArrayList.class" tooltip="java.util.ArrayList">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Dealz4you/\/usr\/lib\/jvm\/java-7-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.util(ArrayList.class"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Dealz.java" tooltip="Dealz4you/src/Deals4you/Dealz.java">
 <persistable path="/Dealz4you/src/Deals4you/Dealz.java"/>
 </file>
