@@ -34,7 +34,9 @@ public static AndroidDriver driver;
 		capabilities.setCapability("platformName","android");
 		capabilities.setCapability("appPackage", "com.ziox.marketplace");
 		capabilities.setCapability("appActivity", "com.ziox.marketplace.MainActivity");
-		//capabilities.setCapability("--no-reset", true);
+		//capabilties to capture screenshot
+		//capabilities.setCapability("MobileCapabilittyType.TAKES_SCREENSHOT", true);
+		//capabilities.setCapability("--no-reset", true); breaks appium in both cases if value is true/false
 		//appium keyboard if value is true device keyboard disappears
 		capabilities.setCapability("unicodeKeyboard", true);
 		driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
@@ -59,9 +61,27 @@ public static AndroidDriver driver;
 		Thread.sleep(10000);
 		
 		driver.swipe(startx,starty,endx,endy,200);
+		
 		Thread.sleep(2000);
 		
-		driver.swipe(endx,endy,startx,starty,200);
+		//driver.swipe(endx,endy,startx,starty,200);
+	}
+	public void swipe_up() throws InterruptedException
+	{
+		Dimension size = driver.manage().window().getSize();
+		int height = size.height;
+		int width = size.width;
+		System.out.println("height=" +size.height+"width="+size.width);
+		int startx = size.width/2;
+		int endx = size.width/2;
+		int starty = size.height - size.height/4;
+		//int starty = size.height - size.height/6;
+		//int starty = size.height - size.height/8;
+		int endy = size.height/4;
+		System.out.println("up swipe");
+		Thread.sleep(10000);
+	driver.swipe(endx,endy,startx,starty,200);
+		
 	}
 
 		//public void element(){
@@ -113,9 +133,7 @@ public static AndroidDriver driver;
 			driver.findElementById("com.ziox.marketplace:id/btimage").click();
 			profile();
 			RFE();
-		    driver.findElementById("com.ziox.marketplace:id/btimage").click();
-			driver.findElementByAndroidUIAutomator("text(\"RECHARGE\")").click();
-			recharge();
+		   recharge();
 			}
 		public void profile() throws InterruptedException{
 			driver.findElementByAndroidUIAutomator("text(\"MY PROFILE\")").click();
@@ -156,14 +174,18 @@ public static AndroidDriver driver;
 		public void RFE(){
 			driver.findElementById("com.ziox.marketplace:id/btimage").click();
 			driver.findElementByAndroidUIAutomator("text(\"REFER A FRIEND\")").click();
-			driver.findElementById("com.ziox.marketplace:id/llFAQvSendInvitations").click();
-			driver.navigate().back();
-			driver.findElementById("com.ziox.marketplace:id/tvCopyUrl").click();
-			driver.navigate().back();
+			 //driver.findElementById("com.ziox.marketplace:id/llFAQvSendInvitations").click();
+			//driver.navigate().back();
+			// bug driver.findElementById("com.ziox.marketplace:id/tvCopyUrl").click();
+			// bug driver.navigate().back();
 			
 		}
 		public void recharge() throws InterruptedException
 		{
+			driver.findElementById("com.ziox.marketplace:id/btimage").click();
+			driver.findElementByAndroidUIAutomator("text(\"RECHARGE\")").click();
+			
+			
 			prepaid();
 		driver.navigate().back();
 			postpaid();
@@ -177,12 +199,16 @@ public static AndroidDriver driver;
 			driver.findElementById("com.ziox.marketplace:id/llPrePaid").click();
 			//driver.findElementById("com.ziox.marketplace:id/edtMobileNumber").click();
 			driver.findElementById("com.ziox.marketplace:id/edtMobileNumber").sendKeys("7206320310"+"\n");
-			Thread.sleep(2000);
+			Thread.sleep(8000);
 			driver.findElementById("com.ziox.marketplace:id/edtAMT").sendKeys("10");
-			//driver.pressKeyCode(AndroidKeyCode.KEYCODE_NUMPAD_ENTER );
-		   // driver.navigate().back();
+			Thread.sleep(5000);
+			
+			driver.pressKeyCode(AndroidKeyCode.KEYCODE_NUMPAD_ENTER );
+		   //driver.navigate().back();
 			//driver.findElementById("com.ziox.marketplace:id/tvBrowsPLans").click();
 			//driver.findElementByAndroidUIAutomator("text(\"2G Data\")").click();
+			
+			//driver.findElementByAndroidUIAutomator("text(\"₹ 15.0 \")").click();
 			driver.findElementById("com.ziox.marketplace:id/btnGO").click();
 			}
 		public void postpaid()
@@ -202,25 +228,37 @@ public static AndroidDriver driver;
 			driver.findElementById("com.ziox.marketplace:id/ivPager_item[0]").click();
 			driver.findElementById("com.ziox.marketplace:id/ivPager_item[1]").click();
 			driver.findElementById("com.ziox.marketplace:id/ivPager_item[2]").click();
+			
 		}
 		public void connection(){
 			//NetworkConnection  connection =  new NetworkConnection(false,false,false);
+			//Networkconnection connection = new Networkconnection(false,false,false);
 			
 			
 		
 }
   public void TOPAPP() throws InterruptedException{
 			driver.findElementByAndroidUIAutomator("UiSelector().className(\"android.widget.TextView\").text(\"TOP APPS\")").click();
-			swipe_vertical();
-			// List list = driver.findElementsById("com.ziox.marketplace:id/gridView");
-		   //System.out.println(list.size());
-		  // for(int j=0;j<=list.size();j++)
-		   //{
-		   //((WebElement) list.get(1)).click();
-		  // }
+			Thread.sleep(2000);
+
+	swipe_vertical();
+	 driver.findElementById("com.ziox.marketplace:id/ivGoOnTop").click();
+  }
+			//driver.findElementByAndroidUIAutomator("UiSelector().className(\"android.widget.LinearLayout[3]\").text(\"Wynk Music\")").click();
+		// WebElement gridView = driver.findElementById("com.ziox.marketplace:id/gridView"); 
+			//	   List<WebElement> list = gridView.findElements(By.xpath("///android.widget.GridView[@id=com.ziox.marketplace:id/gridView"));
+				//   for (int j = 0; j <= list.size(); j++)
+						  // {
+	//WebElement appElement = list.get(j).findElements(By.xpath("com.android.TextView")).get(0); 
+	// if (appElement.getText().equalsIgnoreCase("PhonePe")) 
+	//{ 
+		// appElement.click(); 
+	//break;
+		//		   } }  
+			//	   }
 		   
 		  
-		  
+	  
 		  // do {
 		    //   List<WebElement> allApps = driver.findElements(By.xpath("//android.widget.GridView[@id=com.ziox.marketplace:id/gridView"));
 
@@ -254,7 +292,7 @@ public static AndroidDriver driver;
                   // WebDriverWait wait = new WebDriverWait(driver, 60)
                    //wait.until(ExpectedConditions.elementToBeClickable(By.name("PhonePe")));
                   
-		}
+		
 		//TouchAction action = new TouchAction(driver);
 			// action.longPress(540,1725).moveTo(577,497).release();
 			//action.tap(289,1290).release().perform();
@@ -266,6 +304,7 @@ public static AndroidDriver driver;
 			  driver.findElementByAndroidUIAutomator("UiSelector().className(\"android.widget.TextView\").text(\"FOOTWEAR\")").click();
 			  Thread.sleep(5000);
 			  swipe_vertical();
+			
 			  Thread.sleep(2000);
 			  //driver.findElementById("com.ziox.marketplace:id/ivGoOnTop").click();
 			// driver.findElementByXPath("//android.widget.LinearLayout/com.ziox.marketplace:id/llMain[@index='2']");
@@ -278,23 +317,29 @@ public static AndroidDriver driver;
 			driver.findElementByAndroidUIAutomator("UiSelector().className(\"android.widget.TextView\").text(\"MOVIES\")").click();
 		     Thread.sleep(10000);
 		     swipe_vertical();
+		     swipe_up();
 		    }
 		public void Food() throws InterruptedException{
 			driver.findElementByAndroidUIAutomator("UiSelector().className(\"android.widget.TextView\").text(\"FOOD\")").click();
 			Thread.sleep(10000);
 			swipe_vertical();
+			swipe_up();
 		}
 		public void Fun() throws InterruptedException{
 			driver.findElementByAndroidUIAutomator("UiSelector().className(\"android.widget.TextView\").text(\"FUN ZONE\")").click();
 			Thread.sleep(2000);
+			
+			}
 			//swipe_vertical();
-		}
+
 		public void Fitness() throws InterruptedException{
 			driver.findElementByAndroidUIAutomator("UiSelector().className(\"android.widget.TextView\").text(\"FITNESS\")").click();
 			
 			Thread.sleep(5000);
 			swipe_vertical();
-			 //driver.findElementById("com.ziox.marketplace:id/ivGoOnTop").click();
+			//swipe_up();
+			
+			 driver.findElementById("com.ziox.marketplace:id/ivGoOnTop").click();
 			
 			
 		}
@@ -302,6 +347,7 @@ public static AndroidDriver driver;
 			driver.runAppInBackground(20);
 			driver.currentActivity();
 		}
+	// TO remove application from device.
 		//public void remove(){
 			//driver.removeApp("com.ziox.marketplace");
 		//}
@@ -321,12 +367,12 @@ public static AndroidDriver driver;
 		store.movie();
 		store.Food();
 		store.Fun();
-		store.Fitness();
-	    store.wallet();
+	store.Fitness();
+//	    store.wallet();
         
 		//store.remove();
 		 store.drawer();
-		//store.Close();
+		store.Close();
 		
 		Thread.sleep(1000);
 		}
